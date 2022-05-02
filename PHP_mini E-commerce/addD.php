@@ -102,6 +102,8 @@ if(isset($_POST['sub']))
 
           <?php
           
+          error_reporting(E_ERROR | E_PARSE);
+          
 
           for($i = 0 ; $i < count($_SESSION['arr1']) ; $i++) 
           {
