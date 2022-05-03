@@ -107,7 +107,7 @@ if(isset($_POST['sub']))
 
           for($i = 0 ; $i < count($_SESSION['arr1']) ; $i++) 
           {
-            if(isset( $_SESSION['arr1'][$i])){
+            if(isset( $_SESSION['arr1'][$i])&& $_SESSION['arr1'][$i]['pname']&& $_SESSION['arr1'][$i]['quantity']&&$_SESSION['arr1'][$i]['desc']){
            echo '</tr>'.
            '<td>'.$_SESSION['arr1'][$i]['pname'].'</td>'
            .'<td>'.$_SESSION['arr1'][$i]['quantity']. '</td>'
