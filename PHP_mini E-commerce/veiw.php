@@ -59,7 +59,7 @@ session_start();
 
           for($i = 0 ; $i < count($_SESSION['arr1']) ; $i++) 
           {
-            if(isset( $_SESSION['arr1'][$i])){
+            if(isset( $_SESSION['arr1'][$i])&& $_SESSION['arr1'][$i]['pname']&& $_SESSION['arr1'][$i]['quantity']&&$_SESSION['arr1'][$i]['desc']){
            echo '<div class="card" style="width: 18rem; display:inline-block;margin:20px">'.
            '<img src="images\reseshire1.png" class="card-img-top" alt="...">'.
            '<div class="card-body">'.
